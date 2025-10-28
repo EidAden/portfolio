@@ -1,0 +1,70 @@
+/* .scroll {
+  position: relative;
+
+  .d-arrow {
+    position: absolute;
+    top: 13px;
+    left: 6px;
+    width: 38px;
+    height: 89px;
+    z-index: 2;
+  }
+  .h-arrow {
+    position: absolute;
+    top: 13px;
+    left: 6px;
+    width: 38px;
+    height: 89px;
+  }
+  .d-arrow {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  .h-arrow {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .scroll:hover .d-arrow {
+    opacity: 0;
+  }
+  .scroll:hover .h-arrow {
+    opacity: 1;
+  }
+}
+ */
+
+.scroll {
+  position: relative;
+
+  .d-arrow {
+    position: absolute;
+    top: 13px;
+    left: 6px;
+    width: 38px;
+    height: 89px;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+
+  .h-arrow {
+    position: absolute;
+    top: 13px;
+    left: 6px;
+    width: 38px;
+    height: 89px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  /* ✅ use & for hover */
+  &:hover {
+    .d-arrow {
+      opacity: 0;
+    }
+    .h-arrow {
+      opacity: 1;
+    }
+  }
+}

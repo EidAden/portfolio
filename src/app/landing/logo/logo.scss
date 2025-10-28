@@ -1,6 +1,16 @@
 .logo {
-  /*   padding-top: 121px;
-  padding-left: 200px; */
+  width: auto;
+  text-align: center;
+
+  .logo-img {
+    width: 52px;
+    height: 32px;
+    transition: width 0.4s ease; /* sanfte Animation */
+  }
+
+  &:hover .logo-img {
+    width: 60px; /* +8px breiter */
+  }
 }
 
 .sp2 {

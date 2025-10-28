@@ -1,48 +1,55 @@
-/* .social-container {
-  padding-top: 121px;
-  width: 90%;
+/* Default image visible */
+
+.social-container {
   display: flex;
-  justify-content: first end;
+  gap: 16px; /* space between icons */
+  flex-direction: column;
+
   .icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
+    position: relative;
+    width: 32px;
+    height: 32px;
     cursor: pointer;
 
-    .linkin {
+    /* Base styles for all icons */
+    img {
+      position: absolute;
       width: 32px;
       height: 32px;
-      transition: all 0.3s ease;
+      top: 0;
+      left: 0;
+      transition: opacity 0.3s ease;
+    }
 
-      &:hover {
-        background: #8fb8cf7d;
-        border: 1px solid #89bcd9;
-        color: #262e34;
-        border-radius: 50%;
-        transform: scale(1.1);
+    /* Default visible icons */
+    .Linkedin,
+    .Github,
+    .Email {
+      opacity: 1;
+      z-index: 2;
+    }
+
+    /* Hover (hidden by default) */
+    .h-linkin,
+    .h-github,
+    .h-email {
+      opacity: 0;
+      z-index: 1;
+    }
+
+    /* Hover effect */
+    &:hover {
+      .Linkedin,
+      .Github,
+      .Email {
+        opacity: 0;
+      }
+
+      .h-linkin,
+      .h-github,
+      .h-email {
+        opacity: 1;
       }
     }
   }
 }
-
-.icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  overflow: hidden;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background: #8fb8cf7d;
-    border: 1px solid #89bcd9;
-    transform: scale(1.1);
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-} */

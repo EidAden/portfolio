@@ -1,4 +1,4 @@
-$bg-color: #262e34;
+$bg-color: #0a383f;
 
 .section-hero {
   width: 1214px;
@@ -48,6 +48,17 @@ $bg-color: #262e34;
       display: flex;
       flex-direction: column;
       gap: 16px;
+    }
+  }
+  app-scroll-indicator {
+    position: absolute;
+    top: 540px;
+    left: 906px;
+    width: 38px;
+    height: 89px;
+    cursor: pointer;
+
+    :hover {
     }
   }
 }
