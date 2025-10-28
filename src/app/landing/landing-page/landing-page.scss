@@ -1,0 +1,53 @@
+$bg-color: #262e34;
+
+.section-hero {
+  width: 1214px;
+  height: 705px;
+  background: $bg-color;
+  padding-left: 114px;
+  padding-top: 41px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  /* === Hero Bild + Kreis === */
+  app-hero {
+    position: relative;
+    width: 535px;
+    height: 683px;
+    top: 22px;
+    left: 22px;
+  }
+
+  /* === Rechts: Logo + Social Icons === */
+  .innerDiv {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding-right: 60px;
+    gap: 40px;
+
+    app-logo {
+      width: 66px;
+      height: 73px;
+      margin-top: 20px;
+      position: absolute;
+      top: 121px;
+      left: 892px;
+    }
+
+    app-social-icon {
+      position: absolute;
+      width: 30px;
+      height: 212px;
+      top: 68px;
+      left: 1182px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+}

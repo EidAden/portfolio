@@ -1,0 +1,108 @@
+.hero {
+  position: relative;
+  font-family: 'Anta', sans-serif;
+  display: flex;
+  justify-content: space-between;
+
+  .photos {
+    position: absolute;
+    width: 580px;
+    height: 616px;
+    top: 85px;
+
+    transform: rotate(-45deg);
+  }
+
+  .myphoto {
+    position: absolute;
+    width: 535px;
+    z-index: 3;
+    top: -85px;
+    left: 25px;
+    border-radius: 20px;
+    padding: 16px;
+    transform: rotate(45deg);
+    height: 683px;
+  }
+
+  .img-hover,
+  .img-defualt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    border-radius: 20px;
+  }
+
+  .img-defualt {
+    z-index: 1;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .img-hover {
+    z-index: 2;
+    opacity: 0;
+    transform: scale(1);
+    cursor: pointer;
+  }
+
+  &:hover {
+    .img-hover {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .img-defualt {
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+
+  .title {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 5;
+  }
+
+  h1 {
+    font-family: 'Anta';
+    position: absolute;
+    width: 610px;
+    height: 53px;
+    top: 230px;
+    left: 627px;
+    color: #f8f5ec;
+    font-size: 88px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  h2 {
+    position: absolute;
+    width: 501px;
+    height: 53px;
+    top: 347px;
+    left: 662px;
+    font-family: 'Josefin Sans';
+    color: #f8f5ec;
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 540px;
+    left: 906px;
+    width: 38px;
+    height: 89px;
+
+    cursor: pointer;
+    .arrow-img {
+      height: 150px;
+      cursor: pointer;
+    }
+  }
+}
