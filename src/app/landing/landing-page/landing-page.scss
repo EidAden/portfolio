@@ -1,0 +1,14 @@
+$main-bg-color: #042639;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landing__container {
+  width: 100%;
+  max-width: 1214px;
+  background-color: $main-bg-color;
+  margin: 0 auto;
+}

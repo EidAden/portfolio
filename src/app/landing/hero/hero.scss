@@ -1,0 +1,87 @@
+$main-bg-color: #042639;
+
+.hero {
+  width: 100%;
+  max-width: 1214px;
+  height: 705px;
+  background-color: $main-bg-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hero__left {
+  width: 650px;
+  height: 100%;
+}
+
+.images {
+  position: relative;
+}
+
+.img_left1 {
+  width: 477px;
+  height: 516px;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  transform: rotate(-35deg);
+}
+.img_left2 {
+  width: 480px;
+  height: 516px;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  transform: rotate(-45deg);
+}
+.img_left3 {
+  width: 430px;
+  height: 683px;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}
+
+.hero__logo__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.logo {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero__social_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 68px;
+}
+
+.hero__right {
+  width: 650px;
+  height: 680px;
+}
+.hero__content {
+  width: 580px;
+}
+
+.hero__name {
+  width: 610px;
+  font-size: 88px;
+  font-weight: 400;
+}
+.hero__title {
+  font-size: 44px;
+  font-weight: 400;
+}
