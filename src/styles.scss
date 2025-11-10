@@ -1,31 +1,55 @@
+/*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1214px;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  background-color: #262e34;
+  color: #f8f5ec;
+  font-family: 'Anta', sans-serif;
+  overflow-x: hidden; /* Verhindert horizontale Scrollbar */
+
 @use '@angular/material' as mat;
+
+/* =======================
+   🎨 Fonts einbinden
+======================= */
 
 /* josefin-sans-300 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 300;
-  src: url('/assets/josefin-sans-v34-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/assets/josefin-sans-v34-latin-300.woff2') format('woff2');
 }
+
 /* josefin-sans-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('/assets/josefin-sans-v34-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/assets/josefin-sans-v34-latin-regular.woff2') format('woff2');
 }
 
 /* anta-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Anta';
   font-style: normal;
   font-weight: 400;
-  src: url('/assets/anta-v1-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/assets/anta-v1-latin-regular.woff2') format('woff2');
 }
 
+/* =======================
+   🎨 Angular Material Theme
+======================= */
 html {
   @include mat.theme(
     (
@@ -39,38 +63,31 @@ html {
   );
 }
 
-body {
-  // Default the application to a light color theme. This can be changed to
-  // `dark` to enable the dark color theme, or to `light dark` to defer to the
-  // user's system settings.
-  color-scheme: light;
-
-  // Set a default background, font and text colors for the application using
-  // Angular Material's system-level CSS variables. Learn more about these
-  // variables at https://material.angular.dev/guide/system-variables
-  background-color: var(--mat-sys-surface);
-  color: var(--mat-sys-on-surface);
-  font: var(--mat-sys-body-medium);
-
-  // Reset the user agent margin.
-  margin: 0;
-}
+/* =======================
+   🧩 Globale Variablen
+======================= */
 $main-bg-color: #262e34;
+$color-text: #f8f5ec;
+$color-accent: #89bcd9;
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial, sans-serif';
-  background-color: $main-bg-color;
-  color: #ffffff;
-  min-height: 100vh;
+$font-primary: 'Anta', sans-serif;
+$font-secondary: 'Josefin Sans', sans-serif;
+
+.josefinFont {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
+/* =======================
+   🧱 Globales Styling
+======================= */
 html,
 body {
   height: 100%;
-}
-body {
   margin: 0;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  padding: 0;
+  color-scheme: light;
+  background-color: $main-bg-color;
+  color: $color-text;
+  font-family: $font-primary;
+  min-height: 100vh;
 }

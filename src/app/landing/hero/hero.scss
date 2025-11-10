@@ -1,4 +1,5 @@
 $main-bg-color: #262e34;
+$font-primary: 'Anta', sans-serif;
 
 .hero {
   max-width: 1214px;
@@ -110,7 +111,7 @@ $main-bg-color: #262e34;
 }
 
 .hero__name {
-  font-family: 'Anta';
+  font-family: $font-primary;
   width: 610px;
   font-size: 88px;
   font-weight: 400;

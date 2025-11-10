@@ -1,13 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { LandingPage } from './landing/landing-page/landing-page';
-import { Nav } from './shared/nav/nav';
 import { Footer } from './shared/footer/footer';
-import { WhyMe } from './why-me/why-me';
+import { MainContent } from './main-content/main-content';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LandingPage, Nav, Footer, WhyMe],
+  imports: [RouterOutlet, MainContent, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })

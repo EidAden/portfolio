@@ -1,6 +1,6 @@
 .why__me {
   width: 860px;
-  height: auto;
+  height: 500px;
   margin: 0 auto;
 
   h1 {
@@ -31,6 +31,59 @@
 
       span {
         color: #89bcd9;
+      }
+    }
+  }
+  .me_content {
+    width: 860px;
+    display: flex;
+    justify-content: space-around;
+    height: 176px;
+    gap: 24px;
+  }
+
+  .width-size {
+    width: 379px;
+    height: 176px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .talk__btns {
+    position: relative;
+    width: fit-content; /* passt sich der Button-Größe an */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 600px;
+
+    > img {
+      position: absolute;
+      top: 20px;
+
+      transition: opacity 0.4s ease, transform 0.3s ease; /* Animationseffekt */
+    }
+
+    .btn__talk {
+      z-index: 2;
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .btn__talk_hover {
+      z-index: 1;
+      opacity: 0;
+      transform: scale(1);
+    }
+
+    &:hover {
+      .btn__talk {
+        opacity: 0;
+        transform: scale(1.05); /* leicht vergrößern */
+      }
+      .btn__talk_hover {
+        opacity: 1;
+        transform: scale(1.05); /* gleiche Bewegung */
       }
     }
   }
