@@ -1,7 +1,4 @@
 .mySkills__section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 869px;
   height: 556px;
   margin: 0 auto;
@@ -12,5 +9,94 @@
     line-height: 120px;
     text-align: center;
     color: #89bcd9;
+  }
+
+  .myskill__content {
+    width: 869px;
+    height: 404px;
+    display: flex;
+    justify-content: stretch;
+    gap: 79px;
+
+    .myskill__img {
+      width: 409px;
+      height: 404px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 40px;
+
+      .icons_Group1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 20px;
+      }
+      .icons_Group2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 20px;
+      }
+      .icons_Group3 {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 40px;
+      }
+    }
+  }
+}
+
+.bg__imgs {
+  position: relative;
+  cursor: pointer;
+
+  .moto__tex {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 194px;
+    color: #f8f5ec;
+    font-size: 18;
+    font-weight: 400;
+    object-fit: cover;
+    top: 81px;
+    left: 91px;
+    position: absolute;
+  }
+
+  .reactIcon {
+    position: absolute;
+    width: 36px;
+    height: 54px;
+    top: 121px;
+    left: 135px;
+  }
+
+  .bg_1,
+  .bg_2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .moto__tex {
+    opacity: 2;
+  }
+  .bg_1 {
+    opacity: 0;
+  }
+
+  .bg_2 {
+    opacity: 1;
+  }
+
+  &:hover {
+    .bg_1 {
+      opacity: 1;
+    }
+    .bg_2 {
+      opacity: 0;
+    }
   }
 }
