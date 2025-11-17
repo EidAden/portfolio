@@ -1,7 +1,11 @@
 $footer-bg-color: #89bcd9;
 
 .footer__content {
-  max-width: 100%;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto; // center horizontally
+  /*   padding: 0 24px; // small inner padding for all screens */
+  width: 100%;
   height: 214px;
   background-color: $footer-bg-color;
 
@@ -24,5 +28,25 @@ $footer-bg-color: #89bcd9;
       width: 52px;
       height: 28px;
     }
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer__content {
+    max-width: 900px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__content {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__content {
+    padding: 0 12px;
   }
 }

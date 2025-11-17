@@ -1,13 +1,13 @@
-$bg-nav-color: #89bcd9;
-
-.nav__content {
+.menu__wrap {
+  max-width: 1440px; // limit the content width
+  margin: 0 auto; // center horizontally
+  width: 100%;
+  background: #89bcd9;
+  height: 104px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  background-color: $bg-nav-color;
-  margin-top: 100px;
-  padding-left: 10px;
-  padding-right: 10px;
+  /*   padding: 0 12px; */
 
   .nav__links {
     width: 677px;

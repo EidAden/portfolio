@@ -1,44 +1,19 @@
-/*  {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  width: 1214px;
-  margin: 0 auto;
-  padding: 0;
-  height: 100%;
-  background-color: #262e34;
-  color: #f8f5ec;
-  font-family: 'Anta', sans-serif;
-  overflow-x: hidden; /* Verhindert horizontale Scrollbar */
-
 @use '@angular/material' as mat;
 
-/* =======================
-   🎨 Fonts einbinden
-======================= */
-
-/* josefin-sans-300 - latin */
 @font-face {
   font-display: swap;
   font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 300;
   src: url('/assets/josefin-sans-v34-latin-300.woff2') format('woff2');
-}
-
-/* josefin-sans-regular - latin */
+} /* josefin-sans-regular - latin */
 @font-face {
   font-display: swap;
   font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 400;
   src: url('/assets/josefin-sans-v34-latin-regular.woff2') format('woff2');
-}
-
-/* anta-regular - latin */
+} /* anta-regular - latin */
 @font-face {
   font-display: swap;
   font-family: 'Anta';
@@ -47,9 +22,14 @@ body {
   src: url('/assets/anta-v1-latin-regular.woff2') format('woff2');
 }
 
-/* =======================
-   🎨 Angular Material Theme
-======================= */
+/* === Global Reset === */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* === Angular Material Theme === */
 html {
   @include mat.theme(
     (
@@ -63,9 +43,7 @@ html {
   );
 }
 
-/* =======================
-   🧩 Globale Variablen
-======================= */
+/* === Variables === */
 $main-bg-color: #262e34;
 $color-text: #f8f5ec;
 $color-accent: #89bcd9;
@@ -73,21 +51,9 @@ $color-accent: #89bcd9;
 $font-primary: 'Anta', sans-serif;
 $font-secondary: 'Josefin Sans', sans-serif;
 
-.josefinFont {
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-/* =======================
-   🧱 Globales Styling
-======================= */
 html,
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
-  color-scheme: light;
-  background-color: $main-bg-color;
-  color: $color-text;
-  font-family: $font-primary;
-  min-height: 100vh;
+  background: #000000;
 }
