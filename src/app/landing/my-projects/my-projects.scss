@@ -4,25 +4,29 @@ $sectino-text-color: #f8f5ec;
 .main__card {
   width: 100%;
   height: 100vh;
-  .ellpolo {
+  /*  .ellpolo {
     background-color: transparent;
-    color: #f8f5ec;
-    font-family: Josefin Sans, sans-serif;
+    color: #89bcd9;
     padding: 12px 32px;
     border: none;
     border-radius: 8px;
+    font-family: 'Josefin Sans', serif;
+    font-weight: 500;
+    font-size: 30px;
     cursor: pointer;
-    transition: all 0.3s ease;
-  }
+    transition: all 0.5s ease;
+    width: 350px;
+    height: 100px;
+  } */
 
-  .ellpolo:hover {
-    width: 200px;
+  /*  .ellpolo:hover {
+    width: 350px;
     height: 100px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     background-color: #2d383f;
-    transform: translateY(-1px);
-  }
+    transform: translateY(-2px);
+  } */
 
   .myprojects__contents {
     width: 100%;
@@ -82,6 +86,7 @@ $sectino-text-color: #f8f5ec;
     }
   }
   .testBtn {
+    padding-top: 12px;
     height: 48px;
     display: flex;
     justify-content: center;
@@ -89,19 +94,80 @@ $sectino-text-color: #f8f5ec;
     gap: 34px;
     position: relative;
 
-    .livetestBtn {
-      z-index: 1;
-      transition: all 0.3s ease; /* für schöne Animation */
+    .github-btn {
+      width: 154px;
+      height: 48px;
+      border-radius: 50px;
+      background: transparent;
+
+      border: 1.5px solid #8bbfd9;
+      color: #8bbfd9;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      cursor: pointer;
+      transition: all 0.3s ease;
     }
 
-    .livetestBtn:hover {
+    .github-btn:hover {
+      background: #3b4248;
+      color: #8bbfd9;
+      transform: scale(1.03);
+    }
+
+    .live-test-btn {
+      border: none;
+      background: #89bcd9;
       width: 154px;
       height: 48px;
       border-radius: 30px;
+      color: #262e34;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .live-test-btn:hover {
       background: #f8f5ec;
+
       color: #2d383f;
-      z-index: 3;
-      position: relative; /* damit z-index greift */
+      transform: scale(1.03);
     }
   }
+}
+
+.ellpolo {
+  background-color: transparent;
+  color: #89bcd9;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Josefin Sans', serif;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 350px;
+  height: 100px;
+}
+
+.ellpolo.active {
+  background-color: #2d383f;
+  color: #f8f5ec;
+  transform: translateY(-2px);
+
+  width: 350px;
+  height: 100px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }

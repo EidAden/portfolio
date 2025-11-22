@@ -1,1 +1,77 @@
-<p>contact-me works!</p>
+<div class="contact__content">
+  <h2 class="contac_title">Contact me</h2>
+
+  <div class="info_content">
+    <div class="text">
+      <p>
+        Encourage people to contact you and describe what role you are interested in. Show that you
+        will add value to their projects through your work. Example: Feel free to get in touch with
+        job offers or opportunities such as: ...
+      </p>
+    </div>
+
+    <div class="contact_icons">
+      <!-- MAIL -->
+      <div class="mail_icon">
+        <a href="mailto:e-aden@hotmail.com" class="link_box">
+          <div class="icon_box">
+            <div class="icon1">
+              <img src="imgs/contac/mail1.png" class="hover_icon" />
+              <img src="imgs/contac/mail2.png" class="default_icon" />
+            </div>
+          </div>
+          <span>Email: e-aden@hotmail.com</span>
+        </a>
+      </div>
+
+      <!-- CALL -->
+      <div class="call_icon">
+        <a href="tel:+49123456789" class="link_box">
+          <div class="icon_box">
+            <img src="imgs/contac/phone1.png" class="hover_icon" />
+            <img src="imgs/contac/phone2.png" class="default_icon" />
+          </div>
+          <span>Tel: +49 123 456 789</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <form class="contact-form">
+    <!-- Name + Email -->
+    <div class="form-row">
+      <div class="form-group">
+        <label>Your name</label>
+        <input type="text" name="name" placeholder="" />
+      </div>
+
+      <div class="form-group">
+        <label>Your Email</label>
+        <input type="email" name="email" placeholder="" />
+      </div>
+    </div>
+
+    <!-- Message -->
+    <div class="form-group message-box">
+      <label>Your Message</label>
+      <textarea name="message"></textarea>
+    </div>
+
+    <!-- Privacy Checkbox -->
+    <div class="privacy-row">
+      <label class="checkbox-container">
+        <input type="checkbox" name="privacy" />
+        <span class="checkmark"></span>
+      </label>
+      <p>
+        I've read the <a href="#">privacy policy</a> and agree to the processing of my data as
+        outlined.
+      </p>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="form-submit">
+      <button type="submit">Send</button>
+    </div>
+  </form>
+</div>

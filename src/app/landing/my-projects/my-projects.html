@@ -1,66 +1,209 @@
 <div class="main__card">
-  <div class="buttons">
-    <button class="ellpolo">1.Join</button>
-    <button class="ellpolo">2.El Pollo Locco</button>
-    <button class="ellpolo">3.Ongoing Projects</button>
-  </div>
+  <button class="ellpolo" [class.active]="selectedTab === 'join'" (click)="selectedTab = 'join'">
+    Join
+  </button>
+
+  <button
+    class="ellpolo"
+    [class.active]="selectedTab === 'elpollo'"
+    (click)="selectedTab = 'elpollo'"
+  >
+    El Pollo Loco
+  </button>
+
+  <button
+    class="ellpolo"
+    [class.active]="selectedTab === 'ongoing'"
+    (click)="selectedTab = 'ongoing'"
+  >
+    Ongoing Projects
+  </button>
 
   <div class="myprojects__contents">
-    <div class="projects__card">
-      <div class="title__card">
-        <img src="imgs/project-img/title-el.png" alt="title" class="title" />
-        <h3 class="pro_title">about the Projects</h3>
-        <div class="times">
-          <p>Duration: 6 weeks</p>
+    <div *ngIf="selectedTab === 'join'" class="myprojects__contents">
+      <div class="projects__card">
+        <div class="title__card">
+          <img src="imgs/project-img/title-el.png" alt="title" class="title" />
+          <h3 class="pro_title">about the Projects</h3>
+          <div class="times">
+            <p>Duration: 6 weeks</p>
+          </div>
+        </div>
+
+        <div class="text">
+          <p>
+            Task manager inspired by the Kanban System. Create and organize tasks using drag and
+            drop functions, assign users and categories.
+          </p>
+        </div>
+        <div class="title__card">
+          <img src="imgs/project-img/title-el.png" alt="title" class="title" />
+          <h3 class="pro_title">How I have organised my work process</h3>
+          <div class="times"></div>
+        </div>
+
+        <div class="text">
+          <p>
+            How do you keep your code clean and maintainable? Have you broken the project down into
+            reusable modules or components? Focus on documentation, naming files, variables, classes
+            and testing.
+          </p>
+        </div>
+        <div class="title__card">
+          <img src="imgs/project-img/title-el.png" alt="title" class="title" />
+          <h3 class="pro_title">My group work experience</h3>
+          <div class="times"></div>
+        </div>
+
+        <div class="text">
+          <p>
+            How many people were in the team and what was your role?  Describe your tasks in 1-2
+            sentences. It is nice to mention a good teamwork and cooperation.
+          </p>
         </div>
       </div>
+      <div class="image__content">
+        <div class="techno__content">
+          <h4>Technologies</h4>
+          <div class="tech__icons">
+            <img src="imgs/project-img/css.png" alt="CSS" class="css" />
+            <img src="imgs/project-img/html5.png" alt="html5" class="html5" />
+            <img src="imgs/project-img/Javascript.png" alt="javascript" class="js" />
+          </div>
+        </div>
+        <div class="join__content">
+          <img src="imgs/project-img/join.png" alt="join" class="join" />
+          <div class="testBtn">
+            <button class="live-test-btn">Live Test</button>
 
-      <div class="text">
-        <p>
-          Task manager inspired by the Kanban System. Create and organize tasks using drag and drop
-          functions, assign users and categories.
-        </p>
-      </div>
-      <div class="title__card">
-        <img src="imgs/project-img/title-el.png" alt="title" class="title" />
-        <h3 class="pro_title">How I have organised my work process</h3>
-        <div class="times"></div>
-      </div>
-
-      <div class="text">
-        <p>
-          How do you keep your code clean and maintainable? Have you broken the project down into
-          reusable modules or components? Focus on documentation, naming files, variables, classes
-          and testing.
-        </p>
-      </div>
-      <div class="title__card">
-        <img src="imgs/project-img/title-el.png" alt="title" class="title" />
-        <h3 class="pro_title">My group work experience</h3>
-        <div class="times"></div>
-      </div>
-
-      <div class="text">
-        <p>
-          How many people were in the team and what was your role?  Describe your tasks in 1-2
-          sentences. It is nice to mention a good teamwork and cooperation.
-        </p>
+            <button class="github-btn">GitHub</button>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="image__content">
-      <div class="techno__content">
-        <h4>Technologies</h4>
-        <div class="tech__icons">
-          <img src="imgs/project-img/css.png" alt="CSS" class="css" />
-          <img src="imgs/project-img/html5.png" alt="html5" class="html5" />
-          <img src="imgs/project-img/Javascript.png" alt="javascript" class="js" />
+
+    <!-- El Pollo Section -->
+    <div *ngIf="selectedTab === 'elpollo'" class="myprojects__contents">
+      <div class="projects__card">
+        <div class="title__card">
+          <img src="imgs/project-img/title-el.png" alt="title" class="title" />
+          <h3 class="pro_title">about the Projects</h3>
+          <div class="times">
+            <p>Duration: 6 weeks</p>
+          </div>
+        </div>
+
+        <div class="text">
+          <p>
+            Task manager inspired by the Kanban System. Create and organize tasks using drag and
+            drop functions, assign users and categories.
+          </p>
+        </div>
+        <div class="title__card">
+          <img src="imgs/project-img/title-el.png" alt="title" class="title" />
+          <h3 class="pro_title">How I have organised my work process</h3>
+          <div class="times"></div>
+        </div>
+
+        <div class="text">
+          <p>
+            How do you keep your code clean and maintainable? Have you broken the project down into
+            reusable modules or components? Focus on documentation, naming files, variables, classes
+            and testing.
+          </p>
+        </div>
+        <div class="title__card">
+          <img src="imgs/project-img/title-el.png" alt="title" class="title" />
+          <h3 class="pro_title">My group work experience</h3>
+          <div class="times"></div>
+        </div>
+
+        <div class="text">
+          <p>
+            How many people were in the team and what was your role?  Describe your tasks in 1-2
+            sentences. It is nice to mention a good teamwork and cooperation.
+          </p>
         </div>
       </div>
-      <div class="join__content">
-        <img src="imgs/project-img/join.png" alt="join" class="join" />
-        <div class="testBtn">
-          <img src="imgs/project-img/livetestBtn.png" alt="livetestBtn" class="livetestBtn" />
-          <img src="imgs/project-img/git.png" alt="git-test" class="git-test" />
+      <div class="image__content">
+        <div class="techno__content">
+          <h4>Technologies</h4>
+          <div class="tech__icons">
+            <img src="imgs/project-img/css.png" alt="CSS" class="css" />
+            <img src="imgs/project-img/html5.png" alt="html5" class="html5" />
+            <img src="imgs/project-img/Javascript.png" alt="javascript" class="js" />
+          </div>
+        </div>
+        <div class="join__content">
+          <img src="imgs/project-img/el-img.png" alt="join" class="join" />
+          <div class="testBtn">
+            <button class="live-test-btn">Live Test</button>
+
+            <button class="github-btn">GitHub</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ongoing Projects Section -->
+    <div *ngIf="selectedTab === 'ongoing'" class="myprojects__contents">
+      <div class="projects__card">
+        <div class="title__card">
+          <img src="imgs/project-img/title-el.png" alt="title" class="title" />
+          <h3 class="pro_title">about the Projects</h3>
+          <div class="times">
+            <p>Duration: 6 weeks</p>
+          </div>
+        </div>
+
+        <div class="text">
+          <p>
+            Task manager inspired by the Kanban System. Create and organize tasks using drag and
+            drop functions, assign users and categories.
+          </p>
+        </div>
+        <div class="title__card">
+          <img src="imgs/project-img/title-el.png" alt="title" class="title" />
+          <h3 class="pro_title">How I have organised my work process</h3>
+          <div class="times"></div>
+        </div>
+
+        <div class="text">
+          <p>
+            How do you keep your code clean and maintainable? Have you broken the project down into
+            reusable modules or components? Focus on documentation, naming files, variables, classes
+            and testing.
+          </p>
+        </div>
+        <div class="title__card">
+          <img src="imgs/project-img/title-el.png" alt="title" class="title" />
+          <h3 class="pro_title">My group work experience</h3>
+          <div class="times"></div>
+        </div>
+
+        <div class="text">
+          <p>
+            How many people were in the team and what was your role?  Describe your tasks in 1-2
+            sentences. It is nice to mention a good teamwork and cooperation.
+          </p>
+        </div>
+      </div>
+      <div class="image__content">
+        <div class="techno__content">
+          <h4>Technologies</h4>
+          <div class="tech__icons">
+            <img src="imgs/project-img/css.png" alt="CSS" class="css" />
+            <img src="imgs/project-img/html5.png" alt="html5" class="html5" />
+            <img src="imgs/project-img/Javascript.png" alt="javascript" class="js" />
+          </div>
+        </div>
+        <div class="join__content">
+          <img src="imgs/project-img/comingsoon.png" alt="join" class="join" />
+          <div class="testBtn">
+            <button class="live-test-btn">Live Test</button>
+
+            <button class="github-btn">GitHub</button>
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,83 @@
+.main__content {
+  width: 1209px;
+  height: 479px;
+  padding-left: 116px;
+  h2 {
+    font-family: Josefin Sans;
+    font-size: 32px;
+    font-weight: 400;
+    color: #89bcd9;
+  }
+
+  .testimonial {
+    width: 1220px;
+    display: flex;
+    justify-content: start; // oder flex-start
+    align-items: center;
+    gap: 10px; // Abstand zwischen den 3 Boxen
+  }
+
+  .name_testo {
+    font-family: 'Josefin Sans', serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: #f8f5ec;
+    width: 294px;
+    top: 80px;
+    left: 100px;
+    position: absolute;
+  }
+}
+
+.myskill__right {
+  width: 100%; // 3 Stück nebeneinander
+  display: flex;
+  justify-content: start;
+  padding-top: 50px;
+}
+
+.bg__imgs {
+  position: relative;
+  cursor: pointer;
+
+  .moto__tex {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 294px;
+    height: 121px;
+    color: #f8f5ec;
+    font-size: 18;
+    font-weight: 400;
+    object-fit: cover;
+    top: 161px;
+    left: 30px;
+    position: absolute;
+  }
+
+  .bg_1,
+  .bg_2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .moto__tex {
+    opacity: 2;
+  }
+  .bg_1 {
+    opacity: 0;
+  }
+
+  .bg_2 {
+    opacity: 1;
+  }
+
+  &:hover {
+    .bg_1 {
+      opacity: 1;
+    }
+    .bg_2 {
+      opacity: 0;
+    }
+  }
+}
